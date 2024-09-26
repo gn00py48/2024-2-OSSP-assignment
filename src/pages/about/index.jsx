@@ -487,6 +487,9 @@ IT 창업동아리입니다.</Text2>
     <Name ref={floating9Ref}>
       <ProfileImg src={yeowon2} alt="yeowon2"/><br/>이여원
     </Name>
+    <Name ref={floating9Ref}>
+      <ProfileImg src={yeowon2} alt="geunwoo"/><br/>강근우
+    </Name>
     <RoleText2>BACK-END</RoleText2>
     <Gradation3/>
     <Line2 src={line3} />
