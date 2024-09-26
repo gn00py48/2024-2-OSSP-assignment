@@ -14,10 +14,16 @@ const Container = styled.div`
     margin: 3% 0;
     font-family: 'AppleSDGothicNeoM00';
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    }
 `;
 
 const LinkBox = styled.a`
-  width  : 100%;
+  width: 100%;
 `;
 
 const Header = styled.header`
@@ -95,7 +101,7 @@ const NoticeCard = ({id, notice}) => {
                     </Body>
                     { ( notice.images.length != 0 ) &&
                     <ImgBox>
-                        {notice.images.map((image, idx)=>(
+                        {notice.images.map((image, idx)=>( 
                             <Img
                                 key={idx}
                                 src={image}
